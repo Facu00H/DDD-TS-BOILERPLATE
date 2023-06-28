@@ -1,0 +1,52 @@
+{
+  "name": "prisma-sql",
+  "version": "1.0.0",
+  "description": "Test",
+  "main": "index.js",
+  "repository": "",
+  "author": "Facu00H <faisher00@gmail.com>",
+  "scripts": {
+    "dev": "ts-node-dev src/app.ts",
+    "lint-fix": "eslint --fix src/**/*.ts && eslint --fix prisma/**/*.ts",
+    "dto:generate": "npx prisma generate",
+    "prisma:migrate": "npx prisma migrate dev --name init",
+    "build": "tsc",
+    "start": "node dist/src/app.js",
+    "test": "jest",
+    "db:seed": "ts-node src/seed/seed.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^4.16.1",
+    "bcrypt-ts": "^3.0.1",
+    "bcryptjs": "^2.4.3",
+    "bson": "^5.3.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.9.2",
+    "morgan": "^1.10.0",
+    "prisma-joi-generator": "^0.2.0",
+    "ts-node-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/compression": "^1.7.2",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/helmet": "^4.0.0",
+    "@types/morgan": "^1.9.4",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "compression": "^1.7.4",
+    "concurrently": "^8.0.1",
+    "eslint": "^8.43.0",
+    "helmet": "^7.0.0",
+    "nodemon": "^2.0.22",
+    "prettier-plugin-prisma": "^4.13.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
