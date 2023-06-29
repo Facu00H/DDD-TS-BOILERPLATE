@@ -9,6 +9,8 @@ Bolierplate creado para tener una maqueta inicial al momento de crear un nuevo p
 
 **Server:** Node, Express.
 
+**Testing** Jest
+
 **Database**: PostgreSQL.
 
 **ORM**: Prisma ORM.
