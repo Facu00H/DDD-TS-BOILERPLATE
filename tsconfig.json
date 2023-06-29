@@ -39,5 +39,5 @@
 
     "resolveJsonModule": true
   },
-  "include": ["src", "__test__", "build"],  
+  "include": ["src", "__test__", "build", "context.ts"],  
 }
