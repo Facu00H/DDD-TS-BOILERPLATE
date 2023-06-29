@@ -1,5 +1,8 @@
 import * as dotenv from "dotenv";
-dotenv.config();
+import * as path from "path";
+dotenv.config({
+  path: path.resolve(`./${process.env.CONFIG_PATH}/.env`.replace(/\s/g, ""))
+});
 import express, { Application } from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
@@ -8,7 +11,6 @@ import * as helmet from "helmet";
 import cookieParser from "cookie-parser";
 import morgan from "morgan";
 import IndexRouter from "./routes";
-
 
 class App {
   private readonly app: Application;
